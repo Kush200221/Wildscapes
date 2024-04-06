@@ -1,0 +1,127 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("bodybg.jpg") ;
+  background-repeat: repeat-x;
+  background-size: cover;
+  backdrop-filter: blur(15px);
+  color: rgb(255, 255, 255);
+  font-family: poppins;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.sound-container {
+  background-color: rgb(44, 44, 44);
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  padding: 2rem;
+  width: 80%;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#ambient-select {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.atmosphere-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.atmosphere-container label {
+  display: inline-flex;
+  align-items: center;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.atmosphere-container label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5rem;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.atmosphere-container input[type="checkbox"]:checked + label:before {
+  background-color: #fff;
+}
+
+.atmosphere-container label:hover {
+  background-color: #3e8e41;
+}
+
+#play-pause-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#play-pause-btn:hover {
+  background-color: #cfcfcf;
+}
+
+@media (max-width: 480px) {
+  .sound-container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
