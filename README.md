@@ -23,3 +23,5 @@ Technologies:
 HTML: Provides the foundation for the web app's structure.
 CSS: Enhances the visual appeal and user experience with a calming and intuitive design.
 JavaScript: Powers the interaction and dynamic elements of the app, including audio playback, volume control, and atmosphere layer toggling.
+
+![wildscapes](https://github.com/Kush200221/Wildscapes/assets/125375609/0f471f32-959a-4720-89ca-79f270963747)
